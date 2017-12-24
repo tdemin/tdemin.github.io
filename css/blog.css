@@ -2,7 +2,7 @@
 GENERAL
 ********************/
 
-@import url(https://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic|Montserrat:400,700|Roboto+Slab:400,300,100,700|Jura);
+@import url(https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Montserrat:400,700|Roboto+Slab:400,300,100,700|Jura);
 
 ::-moz-selection {
 background: #808080;
@@ -62,7 +62,7 @@ TYPOGRAPHY
 
 body,
 .quote h3:before {
-font-family: 'PT Serif', Georgia, 'Times New Roman', Times, serif;
+font-family: 'Lora', Georgia, 'Times New Roman', Times, serif;
 font-size: 18px;
 /* 18px */
 line-height: 1.66666667em;
@@ -86,6 +86,7 @@ font-feature-settings: "kern" 1, "liga" 1;
 .copyright,
 .copyright a {
 font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+color: #333;
 }
 
 .menu .nav-button .close {
@@ -946,8 +947,15 @@ p {
 
 /* Customizations */
 
-#tag_hash {
+/* #tag_hash {
 	color: #555;
 	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 	font-style: italic;
+} */
+
+.text a {
+	color: #333;
+	border-bottom: 1px solid #333;
+	padding-bottom: 1px;
+	text-decoration: none;
 }
