@@ -96,13 +96,7 @@ body,
 	font-family: 'Jura', 'Montserrat', Arial, Helvetica, sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-blockquote {
+h1, h2, h3, h4, h5, h6 {
 	font-family: 'Roboto Slab', Georgia, 'Times New Roman', Times, serif;
 	-moz-font-feature-settings: "onum" 1;
 	-moz-font-feature-settings: "onum=1";
@@ -121,12 +115,10 @@ h1 {
 }
 
 h2 {
-	font-size: 2.6666667em;
-	/* 48px */
-	line-height: 1.1666667em;
-	/* 56px */
-	font-weight: 300;
-	margin-bottom: 30px !important;
+	margin-bottom: 30px;
+	font-size: 1.5em;
+    line-height: 1em;
+    font-weight: 400;
 }
 
 h3 {
@@ -184,7 +176,7 @@ p:last-child {
 }
 
 blockquote {
-	margin: 5px 0 15px 60px;
+	margin: 5px 0 15px 0px;
 	font-size: 1.1em;
 	/* 24px */
 	line-height: 1.3em;
@@ -195,6 +187,10 @@ blockquote {
 	-o-font-feature-settings: "onum" 1;
 	-webkit-font-feature-settings: "onum" 1;
 	font-feature-settings: "onum" 1;
+	font-family: 'Lora', Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    border-left: 2px solid #353535;
+    padding-left: 45px;
 }
 
 .post ul,
@@ -243,6 +239,7 @@ header {
 
 .portrait img {
 	border-radius: 50%;
+	border: 2px solid #202020;
 }
 
 .title {
@@ -721,7 +718,7 @@ video {
 a,
 .nav-button hr,
 .nav-button .close {
-	transition: all 0.15s;
+	transition: all 0.08s;
 }
 
 
@@ -968,12 +965,6 @@ a,
 	}
 }
 
-
-/********************
-		DAY MODE
-		********************/
-
-
 /********************
 		TEXT COLOR
 		********************/
@@ -1067,32 +1058,17 @@ a:hover,
 	border-bottom: 2px solid #f2f2f2;
 }
 
+/*
+	Own hacks
+*/
 
-/* Own hacks */
-
-a.portrait img {
-    border: 2px solid #202020;    
-}
+/* Link underlining */
 
 .text p a {
     color: #303030 !important;
     text-decoration: none;
     padding-bottom: 1px;
     border-bottom: 1px solid #303030;
-}
-
-article.post > h2 {
-    font-size: 1.5em !important;
-    line-height: 1em !important;
-    font-weight: 400 !important;
-}
-
-blockquote {
-    font-family: 'Lora', Georgia, 'Times New Roman', Times, serif !important;
-    font-style: italic;
-    border-left: 2px solid #353535;
-    margin-left: 0px !important;
-    padding-left: 45px !important;
 }
 
 @media only screen and (max-width: 960px) {
