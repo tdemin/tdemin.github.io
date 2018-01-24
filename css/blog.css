@@ -1069,3 +1069,34 @@ a:hover,
 
 
 /* Own hacks */
+
+a.portrait img {
+    border: 2px solid #202020;    
+}
+
+.text p a {
+    color: #303030 !important;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #303030;
+}
+
+article.post > h2 {
+    font-size: 1.5em !important;
+    line-height: 1em !important;
+    font-weight: 400 !important;
+}
+
+blockquote {
+    font-family: 'Lora', Georgia, 'Times New Roman', Times, serif !important;
+    font-style: italic;
+    border-left: 2px solid #353535;
+    margin-left: 0px !important;
+    padding-left: 45px !important;
+}
+
+@media only screen and (max-width: 960px) {
+    ul {
+        margin-left: 20px !important;
+    }
+}
