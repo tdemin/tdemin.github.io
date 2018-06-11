@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head prefix="article: http://ogp.me/ns/article#">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="msapplication-navbutton-color" content="#000000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta property="og:type" content="article">
+    <meta property="article:author" content="https://tdem.in">
+    <meta property="og:site_name" content="Блог Тимура Демина">
+    <meta property="og:title" content="Не используйте сервисы VPN">
+    <meta property="og:description" content="Перевод статьи Don't use VPN services за авторством Свена Слутвега (Sven Slootweg). Суть сервисов VPN в формате вопрос-ответ.">
+    <meta name="description" content="Перевод статьи Don't use VPN services за авторством Свена Слутвега (Sven Slootweg). Суть сервисов VPN в формате вопрос-ответ.">
+    <title>Не используйте сервисы VPN — Блог Тимура Демина</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <style>
+      code,pre.highlight{background:#cacecf}a,a:visited,h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{text-decoration:none;color:#333}a,a:visited,body,h1 a:visited,h2 a:visited,h3 a:visited,h4 a:visited,h5 a:visited,h6 a:visited{color:#333}a,a:visited,abbr{border-bottom:.05em solid}body{font-family:'Noto Serif',Georgia,'Times New Roman',serif;font-size:14pt;background:#fff;margin:10px auto;max-width:720px}h1,h2,h3{font-family:'Noto Sans','Lucida Grande',Arial,sans-serif}p{line-height:1.4}code{font-family:'Droid Sans Mono','Roboto Mono',monospace;color:#404040;border-radius:2px;padding:2px 3px;margin-left:2px;font-size:12pt}blockquote{font-style:italic;padding-left:1em;border-left:solid 2px #555}a:hover{color:#282a88}h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{border-bottom:none}h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover{border-bottom:.05em solid;color:#333!important}abbr{text-decoration:none!important}#postDate,.postAuthor{font-style:italic;font-size:12pt;margin:.3em 0}header>p{margin-bottom:0;padding-bottom:0;margin-top:0;padding-top:0}span.contentComment{font-style:italic;font-size:9pt;text-align:center;color:gray}span.contentHighlight{font-style:italic;font-size:16pt;color:gray}#navLang{margin:7px auto}#navLang>a{font-size:10pt;text-decoration:none;font-family:"Noto Sans",Roboto,"Lucida Grande",Arial,sans-serif}a.navActive{color:#000}a.navInactive{color:gray}iframe{width:95%;height:65%}#navPosts{padding-bottom:1pt}#navPrevLink{float:left}#navNextLink{float:right}@media (min-width:720px){a,code,li,p{line-height:1.5}}@media (max-width:720px){body{margin:15px auto;padding:0 10px;font-size:12pt}img{width:auto;height:auto;max-width:90vw}li{line-height:1.5}#navPosts{display:none}}code>a{border-bottom:none!important}#navNextLink,#navPrevLink{border-bottom:none}p#originalComment{font-style: italic !important;}
+    </style>
+    <link rel="canonical" href="/posts/2017-08-13-dont-use-vpn-services_ru">
+    <link rel="alternate" hreflang="en" href="https://gist.github.com/joepie91/5a9909939e6ce7d09e29#file-vpn-md">
+    <script type="application/ld+json">
+      {
+      	"@context": "http://schema.org",
+      	"@type": "Article",
+      	"headline": "Не используйте сервисы VPN",
+      	"author": {
+      		"@type": "Person",
+      		"name": "Тимур Демин"
+      	},
+      	"description": "Перевод статьи Don't use VPN services за авторством Свена Слутвега (Sven Slootweg). Суть сервисов VPN в формате вопрос-ответ.",
+      	"datePublished": "2017-08-13 00:00:00 +0000",
+      	"publisher": {
+      		"@type": "Organization",
+      		"name": "Timur Demin's Blog",
+      		"logo": {
+      			"@type": "ImageObject",
+      			"url": "https://tdem.in/res/avatar.jpg"
+      		}
+      	},
+      	"mainWebsite": {
+      		"@id": "https://tdem.in",
+      		"@type": "WebSite",
+      		"name": "Timur Demin",
+      		"url": "https://tdem.in
+      	}
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <h2>Не используйте сервисы VPN</h2>
+      <p id="originalComment">Оригинал: <a href="https://gist.github.com/joepie91/5a9909939e6ce7d09e29#file-vpn-md">Don't use VPN services</a></p>
+      <p><time id="postDate" datetime="2017-08-13">13.08.2017</p>
+      </p>
+    </header>
+    <article>
+      <p>Нет, правда. Вы, скорее всего, читаете это потому, что вы спросили, какой
+        провайдер VPN лучше, и это — ответ на этот вопрос.</p>
+      <hr />
+      <p><em>Примечание</em></p>
+      <p>Содержание этого поста неприменимо к VPN, используемых в целях, для которых те
+        изначально и были предназначены (для создания внутренних виртуальных частных
+        сетей). Оно применимо лишь к использованию VPN как прокси; именно так и делают
+        “провайдеры VPN”.</p>
+      <hr />
+      <p><strong>Почему нет?</strong> Потому что VPN в этом случае — суть обычное прокси. Провайдер
+        VPN может видеть весь ваш трафик и делать с ним что захочет, включая запись
+        истории посещений сайтов.</p>
+      <p><strong>Но мой провайдер не хранит историю!</strong> Вы не можете проверить это. Тем более
+        любой провайдер заявил бы так, будь у него плохие намерения относительно
+        истории посещений. Единственное верное предположение в этом случае таково:
+        <em>каждый</em> провайдер VPN хранит журнал посещений.</p>
+      <p>Ну и не забывайте, что в интересах провайдера лежит как раз запись истории
+        посещений — она позволяет в случае любых проблем с законом переложить
+        ответственность на пользователя, выдав его. Десять долларов в месяц, которые вы
+        платите, не хватит даже на кофе юристу, так что лучше ожидать, что они вас
+        выдадут при необходимости.</p>
+      <p><strong>Но провайдер потеряет свою репутацию, если сделает так!</strong> Я поверю в это, как
+        только HideMyAss отойдет от дел. Они выдавали своих пользователей в прошлом,
+        причем это <a href="http://www.theregister.co.uk/2011/09/26/hidemyass_lulzsec_controversy/">активно освещалось в СМИ</a>. К сожалению,
+        большинство их пользователей, скорее всего, просто игнорируют это или даже не
+        знают об этом.</p>
+      <p><strong>Но я плачу анонимно, Bitcoin/PaysafeCard/наличными/наркотиками!</strong> Не имеет
+        значения. Вы в любом случае подключаетесь к их серверам со своего IP, и они
+        могут записывать ваши подключения.</p>
+      <p><strong>Но я хочу обезопасить себя!</strong> Сервисы VPN не даруют безопасность. Они — лишь
+        разрекламированные прокси.</p>
+      <p><strong>Но мне нужна конфиденциальность!</strong> VPN не повышают конфиденциальность
+        коммуникаций, за некоторыми исключениями. Если кто-либо хочет прослушать ваше
+        соединение, он по-прежнему может сделать это, ему просто нужно делать это с
+        другой стороны (то есть собирать трафик на выходе с сервера VPN).</p>
+      <p><strong>Но я хочу зашифровать свои коммуникации!</strong> Используйте HTTPS с TLS для 
+        серфинга и оконечное шифрование в мессенджерах. VPN не могут неким магическим
+        образом зашифровать весь трафик: это технически нереализуемо. Если
+        противоположная сторона ожидает нешифрованные данные, вы <em>ничего не сможете</em>
+        сделать.</p>
+      <p>Когда вы используете VPN, единственной шифрованной частью соединения является
+        ваше соединение с VPN-провайдером. От него трафик выходит в том же виде, в каком
+        он был бы без VPN. Ну и не забывайте: <em>провайдер VPN может видеть ваш трафик и</em>
+        <em>вмешиваться в него</em>.</p>
+      <p><strong>Но я хочу запутать “жучки”</strong> <em>(от редактора: под жучками здесь и далее</em>
+        <em>подразумеваются элементы сайтов и программы, которые в автоматическом режиме</em>
+        <em>отслеживают вас при посещении сайтов)</em> <strong>иным IP-адресом!</strong> Ваш IP-адрес почти
+        ничего не значит в современных системах аналитики и отслеживания. Их
+        разработчики приспособились к такой тактике запутывания, ну а сегодня, в век
+        <a href="https://en.wikipedia.org/wiki/Carrier-grade_NAT" title="CGNAT — вариант конфигурации NAT, при котором функцию NAT исполняет оборудование провайдера">CGNAT</a> и огромного количества устройств в домах, IP-адрес просто не
+        является надежным идентификатором.</p>
+      <p>Аналитики практически всегда будут использовать другую тактику для вашей
+        идентификации. Тактика эта может быть любой: от user agent до тактики
+        <a href="https://panopticlick.eff.org" title="Panopticlick">отпечатков</a>. VPN не защитит вас от них.</p>
+      <p><strong>И когда же мне может пригодиться VPN?</strong> Есть два варианта развития событий,
+        при которых VPN может действительно пригодиться:</p>
+      <ol>
+        <li>О вашей сети известно, что она небезопасна (например, это может быть
+          публичная точка доступа Wi-Fi или сеть провайдера, который применяет стратегию
+          <a href="https://ru.wikipedia.org/wiki/Атака_посредника" title="MitM — man in the middle">“человека посередине”</a>), и вы собираетесь работать в ней.</li>
+        <li>Вы хотите скрыть свой IP от конкретных людей, не имеющих отношения к власти,
+          например, обойти блокировку в чат-комнате.</li>
+      </ol>
+      <p>Во втором случае вам скорее нужен обычный прокси, и только для определенного
+        трафика: проход <em>всего</em> трафика через провайдера VPN в любом случае даст ему
+        возможность записи истории посещений и вмешательства в трафик.</p>
+      <p>Впрочем, <em>даже в этих случаях VPN лучше не использовать</em>.</p>
+      <p><strong>Тогда… что дальше?</strong> Если вам очень нужен VPN и вы понимаете, в чем состоят
+        ограничения этой технологии, арендуйте небольшой частный сервер и настройте свой
+        собственный сервер VPN. Я не буду особо выделять каких-либо провайдеров —
+        отсутствие единства здесь лишь на пользу.</p>
+      <p><strong>И чем же это лучше использования сервиса VPN?</strong> Провайдер VPN содержит
+        <em>именно тех пользователей, которые хотят конфиденциальности</em>, и у них содержимое
+        трафика может представлять интерес. Статистически более вероятно, что провайдер
+        VPN будет отслеживать пользователей, чем средний провайдер виртуальных частных
+        серверов.</p>
+      <p><strong>А почему сервисы VPN вообще тогда существуют? Они же должны служить некой</strong>
+        <strong>цели?</strong> Они существуют потому, что на них легко делать деньги. Грубо говоря, 
+        VPN-провайдер просто настраивает OpenVPN на паре серверов и начинает
+        перепродавать канал за немалые деньги. В принципе, VPN-провайдер может обещать
+        абсолютно все что угодно, потому что проверить это обещание нельзя.</p>
+      <p>Ну и да, у провайдеров VPN есть цель, только она состоит в службе провайдеру, а
+        не вам.</p>
+    </article>
+    <footer>
+      <p class="postAuthor">Автор: Sven Slootweg<br>
+        Автор перевода: Тимур Демин</p>
+    </footer>
+  </body>
+</html>
